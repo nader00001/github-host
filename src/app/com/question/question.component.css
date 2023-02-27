@@ -1,0 +1,81 @@
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #0e0ee9; /* rouge vif */
+    text-align: center;
+    padding: 20px; /* espace intérieur de 20px */
+  }
+
+
+
+  h4 {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  label {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  #liste {
+    text-align: right;
+  }
+ 
+
+  #button{
+    text-align: center;
+  }
+  button {
+    background-color: #36aef4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    margin: 2em auto 0;
+    font-size: 20px;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #07ff6e;
+  }
+  #body {
+    padding: 2em 3em;
+    background-repeat: repeat; /* répéter l'image sur toute la surface */
+    background-position: center center; /* centrer l'image sur l'axe horizontal et vertical */
+    background-size: cover; /* étendre l'image pour remplir toute la surface */
+   
+  }
+  hr{
+    float: right;
+    width: 50%;}
+
+    #body{
+      background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    }
+
+    #img{
+        margin: 10%;
+        padding-left: 0%;
+        margin-top: 0%;
+      
+    }

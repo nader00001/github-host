@@ -1,0 +1,26 @@
+<div id="body" >
+    <div id="header">
+        <h2>اختبار لمعرفة نمط تعلم تلميذك</h2>
+
+    </div>
+    
+  <div id="liste">
+    <div *ngFor="let question of questions">
+        <h4>{{ question.question }}</h4>
+        <div *ngFor="let option of question.options">
+            <label id="label">
+                <input type="radio" name="{{ 'question-' + question.id }}" [(ngModel)]="question.answer" [value]="option.id" class="input">
+                {{ option.value }}
+            </label>
+        </div>
+        <hr>
+        <br>
+      </div>
+      <!-- <div id="img">
+        <img src="../../../assets/images/hjar.jpg" alt="">
+      </div> -->
+  </div>
+  <div id="button">
+    <button (click)="submitAnswers()">Submit</button>
+  </div>
+</div>

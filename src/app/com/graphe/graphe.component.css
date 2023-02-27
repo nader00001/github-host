@@ -1,0 +1,16 @@
+#result{
+    text-align: center;
+    color: rgb(25, 22, 223);
+}
+#piechart{
+    color: aqua;
+}
+#piechart {
+    width: 200px;
+    height: 150px;
+  }
+  #piechart .chartjs-legend ul li span {
+    font-weight: bold;
+  }
+  
+  

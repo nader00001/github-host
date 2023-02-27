@@ -1,0 +1,43 @@
+/* Style pour la liste */
+.child-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 10%;
+    align-items: center;
+    justify-items: center;
+    
+    width: 50%;
+    height: 50%;
+    
+    
+  }
+  
+  /* Style pour chaque élément de la liste */
+  .child-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+  }
+  
+  /* Style pour le titre de chaque élément de la liste */
+  .child-item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Style pour la description de chaque élément de la liste */
+  .child-item p {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  #body{
+    background-image: url("../../../assets/images/9atous.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+  
