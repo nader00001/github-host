@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AnimationComponent } from './animation.component';
+import { ToAl3ebComponent } from './to-al3eb.component';
 
-describe('AnimationComponent', () => {
-  let component: AnimationComponent;
-  let fixture: ComponentFixture<AnimationComponent>;
+describe('ToAl3ebComponent', () => {
+  let component: ToAl3ebComponent;
+  let fixture: ComponentFixture<ToAl3ebComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AnimationComponent ]
+      declarations: [ ToAl3ebComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AnimationComponent);
+    fixture = TestBed.createComponent(ToAl3ebComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

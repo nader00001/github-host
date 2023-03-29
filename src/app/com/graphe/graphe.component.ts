@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Chart , registerables} from 'node_modules/chart.js'
+import { Router } from '@angular/router';
+import {Chart , registerables} from 'node_modules/chart.js';
 import { ServiceService } from 'src/app/services/service.service';
 
 Chart.register(...registerables);
@@ -10,7 +11,7 @@ Chart.register(...registerables);
   styleUrls: ['./graphe.component.css']
 })
 export class GrapheComponent implements OnInit {
-  constructor(private service :ServiceService ){}
+  constructor(private service :ServiceService , private router : Router){}
   nbr : number[] =     this.service.note ;
   
   ngOnInit(): void {
@@ -26,8 +27,9 @@ export class GrapheComponent implements OnInit {
     console.log(a , b , c);
    // console.log(this.nombreDeFoix1 , this.nombreDeFoix2 )
     console.log("nader");
-    this.RenderChart(2 , 4 ,5);
-
+    this.RenderChart(a , b ,c);
+   
+    
       
     
 
@@ -51,7 +53,9 @@ export class GrapheComponent implements OnInit {
 			 if(this.nbr[i]===2){
 				count2++;
 			} 
+
 		} return count2 ;
+
 		
 	}
 	nombreDeFoix3():number {
@@ -73,12 +77,12 @@ if (canvasElement) {
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['إذا كانت أغلب الإجابات', ' فإن التلميذ ذو نمط تعلم سمعي', 'فإن التلميذ ذو نمط تعلم حسي-حركي'],
+      labels: [' إن التلميذ ذو نمط تعلم بصري', ' فإن التلميذ ذو نمط تعلم سمعي', 'فإن التلميذ ذو نمط تعلم حسي-حركي'],
       datasets: [{
         label: 'الإجابات',
         data: [a, b, c],
         borderWidth: 1,
-        backgroundColor: 'blue'
+        backgroundColor: 'Turquoise'
       }]
     },
     options: {
@@ -89,10 +93,10 @@ if (canvasElement) {
       },
       layout: {
         padding: {
-          top: 10,
+          top: 50,
           bottom: 10,
-          left: 10,
-          right: 10
+          left: 300 ,
+          right: 200,
         },
         
       }
@@ -105,4 +109,23 @@ if (canvasElement) {
   
   
   }
+  
+
+  goTo(){
+    const value1 = this.nombreDeFoix1(); // Valeur 1
+    const value2 = this.nombreDeFoix2(); // Valeur 2
+    const value3 = this.nombreDeFoix3(); // Valeur 3
+
+    let maxValue: number = Math.max(value1, value2 ,value3 );
+    let targetRoute: string ='default';
+    if (maxValue === value1) {
+      targetRoute = 'basari';
+    } else if (maxValue === value2) {
+      targetRoute = 'sam3i';
+    } else if (maxValue === value3) {
+      targetRoute = 'hessi';
+    }
+    this.router.navigate([targetRoute]);
+}
+   
 }

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './com/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AnimationComponent } from './animation/animation.component';
 import { JeuComponent } from './jeu/jeu.component';
 import { AdminComponent } from './com/admin/admin.component';
 import { FaceComponent } from './com/face/face.component';
@@ -15,6 +14,9 @@ import { NgChartsModule } from 'ng2-charts';
 import { Sam3iComponent } from './com/sam3i/sam3i.component';
 import { HessiComponent } from './com/hessi/hessi.component';
 import { BasariComponent } from './com/basari/basari.component';
+import { AnnimationComponent } from './com/annimation/annimation.component';
+import { Nal3bouComponent } from './com/nal3bou/nal3bou.component';
+import { ToAl3ebComponent } from './com/to-al3eb/to-al3eb.component';
 
 
 
@@ -25,7 +27,6 @@ import { BasariComponent } from './com/basari/basari.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    AnimationComponent,
     JeuComponent,
     AdminComponent,
     FaceComponent,
@@ -33,7 +34,10 @@ import { BasariComponent } from './com/basari/basari.component';
     GrapheComponent,
     Sam3iComponent,
     HessiComponent,
-    BasariComponent ,
+    BasariComponent,
+    AnnimationComponent,
+    Nal3bouComponent,
+    ToAl3ebComponent ,
     
     
   ],

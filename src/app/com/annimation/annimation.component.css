@@ -1,0 +1,25 @@
+.animation-container {
+    height: 100vh; /* Hauteur à 100% de la hauteur de la vue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .animation {
+    width: 50%;
+    height: 50%;
+    background-color: #ffcc00;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

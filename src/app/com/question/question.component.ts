@@ -35,7 +35,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	بالصور وكثرة الألوان والأشكال' },
         { id: 2, value: 'ب‌-	بمشاهدة مقاطع فيديو أو عبر سرد حكاية' },
-        { id: 3, value: 'ت‌-	من خلال القيام بألعاب تتطلب الحركة' },
+        { id: 3, value: 'ج-	من خلال القيام بألعاب تتطلب الحركة' },
       ],
       answer: 0,
     },
@@ -45,7 +45,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يتأثر بالفوضى من حوله' },
         { id: 2, value: 'ب‌-	يتأثر بالأحاديث الجانبية' },
-        { id: 3, value: 'ت‌-	يواجه صعوبة في الجلوس بثبات حتى لفترة بسيطة' },
+        { id: 3, value: 'ج-	يواجه صعوبة في الجلوس بثبات حتى لفترة بسيطة' },
       ],
       answer: 0,
     },
@@ -55,7 +55,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يحفظ ولديه قوة ملاحظة' },
         { id: 2, value: 'ب‌-	يجادل كثيرا ويناقش' },
-        { id: 3, value: 'ت‌-	يتواصل معك باللمس أو الحركة' },
+        { id: 3, value: 'ج-	يتواصل معك باللمس أو الحركة' },
       ],
       answer: 0,
     },
@@ -65,7 +65,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يقود المجموعة ويتخذ القرارات' },
         { id: 2, value: 'ب‌-	يناقش ويحاور لوقت طويل' },
-        { id: 3, value: 'ت‌-	يتواصل بالحركة' },
+        { id: 3, value: 'ج-	يتواصل بالحركة' },
       ],
       answer: 0,
     },
@@ -75,7 +75,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يقرأها بمفرده' },
         { id: 2, value: 'ب‌-	تقرأها له بصوت عالي' },
-        { id: 3, value: 'ت‌-	تجسدها له ' },
+        { id: 3, value: 'ج-	تجسدها له ' },
       ],
       answer: 0,
     },
@@ -85,7 +85,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يركز في الألوان والصور' },
         { id: 2, value: 'ب‌-	يأنس للقراءة الجهرية' },
-        { id: 3, value: 'ت‌-	لا يفضل القراءة' },
+        { id: 3, value: 'ج-	لا يفضل القراءة' },
       ],
       answer: 0,
     },
@@ -95,7 +95,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	الإيقاظ العلمي والرياضيات ' },
         { id: 2, value: 'ب‌-	التواصل الشفوي والقراءة' },
-        { id: 3, value: 'ت‌-	التربية التشكيلية والموسيقية' },
+        { id: 3, value: 'ج-	التربية التشكيلية والموسيقية' },
       ],
       answer: 0,
     },
@@ -105,7 +105,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يقوم به بشكل متقن ومنظم' },
         { id: 2, value: 'ب‌-	ينصت للأوامر ويطيع' },
-        { id: 3, value: 'ت‌-	يكون خدوما ومساعدا  ' },
+        { id: 3, value: 'ج-	يكون خدوما ومساعدا  ' },
       ],
       answer: 0,
     },
@@ -115,7 +115,7 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يهتم بالملصقات الحائطية' },
         { id: 2, value: 'ب‌-	يتحدث كثيرا مع الآخرين من حوله' },
-        { id: 3, value: 'ت‌-	ينفر من شكل الطاولات المكتظة والقسم المزدحم  ' },
+        { id: 3, value: 'ج-	ينفر من شكل الطاولات المكتظة والقسم المزدحم  ' },
       ],
       answer: 0,
     },
@@ -125,7 +125,17 @@ export class QuestionComponent {
       options: [
         { id: 1, value: 'أ‌-	يحب السلطة، قائد لغيره' },
         { id: 2, value: 'ب‌-	يحب المدح' },
-        { id: 3, value: 'ت‌-	يحب الحركة واللعب' },
+        { id: 3, value: 'ج-	يحب الحركة واللعب' },
+      ],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question:' ما الذي يزعج تلميذك أثناء الدرس ويشتت انتباهه:',
+      options: [
+        { id: 1, value: 'أ- الفوضى' },
+        { id: 2, value: 'ب- الضوضاء' },
+        { id: 3, value: 'ج- البقاء جالسا فترة طويلة' },
       ],
       answer: 0,
     },
