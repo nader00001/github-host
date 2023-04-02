@@ -131,7 +131,7 @@ export class QuestionComponent {
     },
     {
       id: 11,
-      question:' ما الذي يزعج تلميذك أثناء الدرس ويشتت انتباهه:',
+      question:' ما الذي يزعج تلميذك أثناء الدرس ويشتت انتباهه',
       options: [
         { id: 1, value: 'أ- الفوضى' },
         { id: 2, value: 'ب- الضوضاء' },
